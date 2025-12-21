@@ -1,0 +1,238 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+.navbar-brand {
+  width: 2.5rem;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+
+.offcanvas {
+  padding: 0 !important; /* prevent navbar size changes */
+}
+
+.logo {
+  width: 3rem;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brand {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.brand:hover {
+  transform: scale(1.1);
+}
+
+.padtop {
+  padding-top: 3rem; /* avoiding title overlap with the navbar */
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+[data-bs-theme="light"] .profile {
+  width: auto;
+  height: 20rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 10px rgba(166, 255, 0, 0.4), 0 0 30px rgba(255, 0, 0, 0.2);
+}
+
+[data-bs-theme="dark"] .profile {
+  width: auto;
+  height: 20rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 0 12px rgba(255, 255, 255, 0.8),
+    0 0 40px rgba(128, 128, 128, 0.4);
+}
+
+.profile:hover {
+  transform: scale(1.05);
+  box-shadow: none;
+}
+
+.greet {
+  font-size: 4rem;
+}
+
+.hero {
+  min-height: 85vh;
+}
+
+.dot {
+  /* indicates availability */
+  margin: 0 5px 3px;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: lightgreen;
+}
+
+.btn-success {
+  /* whatsapp button */
+  background-color: rgb(85, 212, 85);
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: rgb(116, 226, 116);
+  border: none;
+}
+
+.btn-reverse {
+  /* download button */
+  background-color: var(--bs-body-color);
+  color: var(--bs-body-bg);
+  border: 1px solid var(--bs-body-color);
+}
+
+.swiper-slide {
+  /* tech stack item size */
+  width: 100px;
+}
+
+.swiper-wrapper {
+  height: fit-content;
+  transition-timing-function: linear !important;
+}
+
+/* gradient for tech stack */
+[data-bs-theme="light"] .l0 {
+  left: 0;
+  width: 7rem;
+  z-index: 10;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5),
+    #ffffff
+  );
+}
+
+[data-bs-theme="light"] .r0 {
+  right: 0;
+  width: 7rem;
+  z-index: 10;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5),
+    #ffffff
+  );
+}
+
+[data-bs-theme="dark"] .l0 {
+  left: 0;
+  width: 7rem;
+  z-index: 10;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(33, 37, 41, 0.7),
+    rgba(33, 37, 41)
+  );
+}
+
+[data-bs-theme="dark"] .r0 {
+  right: 0;
+  width: 7rem;
+  z-index: 10;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(33, 37, 41, 0.7),
+    rgba(33, 37, 41)
+  );
+}
+
+/* theme-match background */
+[data-bs-theme="light"] .bg-theme {
+  background-color: #ffffff;
+}
+
+[data-bs-theme="dark"] .bg-theme {
+  background-color: rgb(0, 0, 0);
+}
+
+[data-bs-theme="light"] .bg-card {
+  background-color: rgb(248, 247, 247);
+}
+
+[data-bs-theme="dark"] .bg-card {
+  background-color: rgb(26, 26, 26);
+}
+
+.linkedin {
+  font-size: 1.5rem;
+  color: #0a66c2;
+}
+
+.linkedin:hover {
+  color: #347ec9;
+}
+
+.github {
+  font-size: 1.5rem;
+  color: #747474;
+}
+
+.github:hover {
+  color: #a8a8a8;
+}
+
+/* custom responsive design*/
+@media (max-width: 1200px) {
+  .greet {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1000px) {
+  .rounded-md-0 {
+    border-radius: 0 !important;
+  }
+}
+
+@media (min-width: 521px) and (max-width: 767px) {
+  .rounded-md-0 {
+    border-radius: 0 !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .offcanvas {
+    /* ensure menubar not covered page */
+    width: 300px !important;
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .greet {
+    font-size: 2rem;
+  }
+
+  .offcanvas {
+    /* ensure menubar not covered page */
+    width: 200px !important;
+    padding: 0 !important;
+  }
+
+  .profile {
+    /* adjust profile image size */
+    height: 10rem !important;
+  }
+}

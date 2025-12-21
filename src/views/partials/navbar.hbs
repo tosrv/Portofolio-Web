@@ -1,0 +1,100 @@
+<nav class="navbar navbar-expand-lg bg-theme fixed-top p-0">
+  <div class="container py-1 px-3">
+    <!-- brand logo -->
+    <img
+      src="/assets/images/logos/logo.png"
+      alt="Logo"
+      class="navbar-brand nav-link pointer"
+      data-target="hero"
+      title="Home"
+    />
+
+    <section class="d-flex align-items-center">
+      <!-- menu -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#navbar"
+        aria-controls="navbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-end"
+        tabindex="-1"
+        id="navbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+
+          <!-- close button -->
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="offcanvas-body">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+
+            <!-- navbar menu -->
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0)"
+                data-target="tech"
+              >Tech Stack</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0)"
+                data-target="experience"
+              >Experience</a>
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link"
+                href="javascript:void(0)"
+                data-target="project"
+              >Project</a>
+            </li>
+            <li class="nav-item">
+              <div
+                class="d-flex flex-column justify-content-center flex-lg-row justify-content-lg-start gap-4 mt-3 ms-3 me-3 mt-lg-0"
+              >
+
+                <!-- reach button -->
+                <a
+                  href="https:/wa.me/6281553960011"
+                  target="_blank"
+                  class="btn btn-success"
+                ><i class="bi bi-whatsapp"></i>
+                  Let's Talk</a>
+                <a
+                  href="https://drive.google.com/file/d/1PAWIWLNYoaGgxq_DMpj0fG4kLsEeR7bS/view?usp=sharing"
+                  target="_blank"
+                  class="btn btn-reverse"
+                ><i class="bi bi-file-earmark-arrow-down"></i>
+                  Download CV</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- theme button -->
+      <i
+        class="bi bi-moon-fill ms-3 pointer navbar-nav nav-item nav-link"
+        id="themeToggle"
+        title="Change Theme"
+        onclick="changeTheme()"
+      ></i>
+    </section>
+  </div>
+</nav>
