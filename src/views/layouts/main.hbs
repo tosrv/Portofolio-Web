@@ -1,0 +1,93 @@
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+    ></script>
+
+    <!-- typed -->
+     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- font: lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- title icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="/assets/icons/favicon.ico"
+    />
+
+    <!-- local css -->
+    <link rel="stylesheet" href="/assets/stylesheet/style.css" />
+
+    <title>Rahmat Tomy</title>
+  </head>
+  <body>
+    <header>{{> navbar}}</header>
+    <main class="container">
+
+        <!-- content -->
+        <section id="hero">{{> hero}}</section>
+        <section id="tech">{{> tech_stack}}</section>
+        <section id="experience">{{> experience}}</section>
+        <section id="project">{{> project}}</section>
+        <section >{{> contact}}</section>
+    </main>
+    
+    <footer>{{> footer}}</footer>
+    <script src="/assets/javascript/script.js"></script>
+  </body>
+</html>
