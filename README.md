@@ -10,5 +10,5 @@ The `reference` branch contains an unmodified version
 used strictly for learning purposes.
 
 ## Deployment
-Deployed on Netlify.
+Deployed on Netlify:
 https://final-porto.netlify.app/
