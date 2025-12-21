@@ -1,0 +1,837 @@
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- bootstrap css -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- bootstrap js -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- bootstrap icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+      integrity="sha384-tViUnnbYAV00FLIhhi3v/dWt3Jxw4gZQcNoSCxCIFNJVCx7/D55/wXsrNIRANwdD"
+      crossorigin="anonymous"
+    />
+
+    <!-- swiper -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- typed -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <!-- font: lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- title icon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../assets/icons/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="../assets/icons/favicon.ico"
+    />
+
+    <!-- local css -->
+    <link rel="stylesheet" href="../assets/stylesheet/style.css" />
+
+    <title>Rahmat Tomy</title>
+  </head>
+  <body>
+    <header>
+      <!-- navbar section -->
+      <nav class="navbar navbar-expand-lg fixed-top p-0">
+        <div class="container d-flex justify-content-end py-1 px-3">
+          <section
+            class="d-flex align-items-center px-3 py-1 bg-theme rounded-3 shadow-sm"
+          >
+            <!-- brand logo -->
+            <img
+              src="../assets/images/logos/logo.png"
+              alt="Logo"
+              class="navbar-brand nav-link pointer me-3"
+              data-target="hero"
+              title="Home"
+            />
+
+            <!-- menu -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#navbar"
+              aria-controls="navbar"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div
+              class="offcanvas offcanvas-end"
+              tabindex="-1"
+              id="navbar"
+              aria-labelledby="offcanvasNavbarLabel"
+            >
+              <div class="offcanvas-header">
+                <h3>Rahmat Tomy</h3>
+                <!-- close button -->
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"
+                ></button>
+              </div>
+
+              <div class="offcanvas-body">
+                <ul class="navbar-nav ms-auto">
+                  <!-- navbar menu -->
+                  <li class="nav-item">
+                    <a
+                      class="nav-link m-0 px-2 py-2 py-lg-0"
+                      href="javascript:void(0)"
+                      data-target="tech"
+                      >Tech Stack</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link m-0 px-2 py-2 py-lg-0"
+                      href="javascript:void(0)"
+                      data-target="experience"
+                      >Experience</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link m-0 px-2 py-2 py-lg-0"
+                      href="javascript:void(0)"
+                      data-target="project"
+                      >Project</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <!-- download cv button -->
+                    <a
+                      href="https://drive.google.com/file/d/1PAWIWLNYoaGgxq_DMpj0fG4kLsEeR7bS/view?usp=sharing"
+                      target="_blank"
+                      class="btn btn-reverse ms-2 px-1 py-0 mt-2 mt-lg-0"
+                      ><i class="bi bi-file-earmark-arrow-down"></i> Download
+                      CV</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <!-- theme button -->
+            <i
+              class="bi bi-moon-fill ms-3 pointer navbar-nav nav-item nav-link"
+              id="themeToggle"
+              title="Change Theme"
+              onclick="changeTheme()"
+            ></i>
+          </section>
+        </div>
+      </nav>
+    </header>
+    <main class="container">
+      <!-- content -->
+      <section id="hero">
+        <!-- hero section -->
+        <div
+          class="hero pt-5 pt-md-0 d-flex justify-content-center align-items-center"
+        >
+          <div class="d-flex flex-wrap justify-content-center">
+            <section class="d-flex flex-column flex-md-row">
+              <div class="me-md-5 pe-md-5">
+                <!-- introduction -->
+                <h5 class="text-secondary">Hello, I'm</h5>
+                <h1 class="fw-bolder">Rahmat&nbsp;Tomy</h1>
+                <div>
+                  <p class="fw-medium mb-0 text-secondary">
+                    <!-- address -->
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Magetan, Jawa Timur, Indonesia
+                  </p>
+                  <p class="fw-medium text-secondary">
+                    <!-- availability -->
+                    <span class="d-inline-block rounded-5 dot"></span>
+                    Available for new projects
+                  </p>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <!-- reach button -->
+                  <a
+                    href="https:/wa.me/6281553960011"
+                    target="_blank"
+                    class="btn btn-success fs-5"
+                    ><i class="bi bi-whatsapp"></i> Reach Me</a
+                  >
+                </div>
+              </div>
+
+              <!-- profile image -->
+              <div class="position-relative d-flex justify-content-center m-3">
+                <img
+                  src="../assets/images/avatar/profile.png"
+                  alt="Profile"
+                  class="profile"
+                />
+                <img
+                  src="../assets/images/avatar/shape.png"
+                  alt="Profile"
+                  class="position-absolute z-n1 shape"
+                />
+                <div class="position-absolute bottom-0 gradient"></div>
+              </div>
+            </section>
+            <section
+              class="text-secondary intro mb-3 ms-lg-5 ps-lg-5 d-flex flex-column justify-content-lg-center"
+            >
+              <!-- job -->
+              <h3><span class="role text-secondary"></span></h3>
+              <h5>
+                I am a Full-Stack Developer in training with a strong technical
+                foundation in networking, server environments, and system
+                documentation. Currently sharpening my skills through an
+                intensive coding bootcamp.
+              </h5>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section id="tech">
+        <!-- tech section -->
+        <h2 class="pt-5 pt-md-0 mb-4"><b>Currently Learning Tech Stack</b></h2>
+
+        <!-- swiper -->
+        <div class="swiper swiper-tech position-relative mb-5">
+          <!-- gradient left -->
+          <div class="position-absolute top-0 bottom-0 l0"></div>
+          <!-- gradient right -->
+          <div class="position-absolute top-0 bottom-0 r0"></div>
+
+          <!-- tech stack -->
+          <div class="swiper-wrapper m-4">
+            <!-- bootstrap -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/bootstrap.png"
+                    alt="Bootstrap"
+                    id="bootstrap"
+                    class="logo"
+                  />
+                </div>
+                <label for="bootstrap" class="fs-6 text-secondary"
+                  >Bootstrap</label
+                >
+              </div>
+            </div>
+
+            <!-- tailwind -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/tailwind.png"
+                    alt="Tailwind"
+                    id="tailwind"
+                    class="logo"
+                  />
+                </div>
+                <label for="tailwind" class="fs-6 text-secondary"
+                  >Tailwind</label
+                >
+              </div>
+            </div>
+
+            <!-- express -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/express.png"
+                    alt="Express.js"
+                    id="expressjs"
+                    class="logo"
+                  />
+                </div>
+                <label for="expressjs" class="fs-6 text-secondary"
+                  >Express.js</label
+                >
+              </div>
+            </div>
+
+            <!-- nodejs -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/node.png"
+                    alt="Node.js"
+                    id="nodejs"
+                    class="logo"
+                  />
+                </div>
+                <label for="nodejs" class="fs-6 text-secondary">Node.js</label>
+              </div>
+            </div>
+
+            <!-- nextjs -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/nextjs.png"
+                    alt="Next.js"
+                    id="nextjs"
+                    class="logo"
+                  />
+                </div>
+                <label for="nextjs" class="fs-6 text-secondary">Next.js</label>
+              </div>
+            </div>
+
+            <!-- react -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/react.png"
+                    alt="React"
+                    id="react"
+                    class="logo"
+                  />
+                </div>
+                <label for="react" class="fs-6 text-secondary">React</label>
+              </div>
+            </div>
+
+            <!-- mongodb -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/mongodb.png"
+                    alt="MongoDB"
+                    id="mongodb"
+                    class="logo"
+                  />
+                </div>
+                <label for="mongodb" class="fs-6 text-secondary">MongoDB</label>
+              </div>
+            </div>
+
+            <!-- postgre -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/postgre.png"
+                    alt="PostgreSQL"
+                    id="postgre"
+                    class="logo"
+                  />
+                </div>
+                <label for="postgre" class="fs-6 text-secondary"
+                  >PostgreSQL</label
+                >
+              </div>
+            </div>
+
+            <!-- javascript -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/javascript.png"
+                    alt="JavaScript"
+                    id="javascript"
+                    class="logo"
+                  />
+                </div>
+                <label for="javascript" class="fs-6 text-secondary"
+                  >JavaScript</label
+                >
+              </div>
+            </div>
+
+            <!-- typescript -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/typescript.png"
+                    alt="TypeScript"
+                    id="typescript"
+                    class="logo"
+                  />
+                </div>
+                <label for="typescript" class="fs-6 text-secondary"
+                  >TypeScript</label
+                >
+              </div>
+            </div>
+
+            <!-- unity -->
+            <div class="swiper-slide">
+              <div class="d-flex flex-column align-items-center p-2">
+                <div class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded">
+                  <img
+                    src="../assets/images/logos/unity.png"
+                    alt="Unity"
+                    id="unity"
+                    class="logo"
+                  />
+                </div>
+                <label for="unity" class="fs-6 text-secondary">Unity</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="experience">
+        <!-- experience section -->
+        <h2 class="pt-5 pt-md-0"><b>Work Experiences:</b></h2>
+        <div class="container row row-cols-1 justify-content-center mb-5">
+          <!-- luckland -->
+          <section class="m-4 p-4 col rounded-3 shadow-sm bg-theme w-75">
+            <div class="d-flex flex-column flex-lg-row gap-3">
+              <div
+                class="d-flex flex-column align-items-center align-items-md-start"
+              >
+                <div class="d-flex flex-column align-items-center p-2">
+                  <div
+                    class="d-inline p-1 m-0 brand bg-light shadow-sm rounded"
+                  >
+                    <img
+                      src="../assets/images/logos/luckland.png"
+                      alt="Luckland"
+                      class="logo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <div
+                  class="d-flex flex-column flex-lg-row justify-content-between"
+                >
+                  <div class="d-inline">
+                    <h4 class="m-0 mt-2">
+                      <b>Interior Finishing Technical Intern</b>
+                    </h4>
+                    <p class="text-success">Luckland</p>
+                  </div>
+                  <p class="text-secondary">Jul 2022 - Jun 2025</p>
+                </div>
+                <ul class="ps-3 text-secondary">
+                  <li>
+                    Maintained daily work documentation and progress reports.
+                  </li>
+                  <li>
+                    Coordinated daily interior finishing tasks to meet project
+                    deadlines.
+                  </li>
+                  <li>Ensured finishing quality met required standards.</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- ldp -->
+          <section class="m-4 p-4 col rounded-3 shadow-sm bg-theme w-75">
+            <div class="d-flex flex-column flex-lg-row gap-3">
+              <div
+                class="d-flex flex-column align-items-center align-items-md-start"
+              >
+                <div class="d-flex flex-column align-items-center p-2">
+                  <div
+                    class="d-inline p-1 m-0 brand bg-light shadow-sm rounded"
+                  >
+                    <img
+                      src="../assets/images/logos/ldp.png"
+                      alt="LDP"
+                      class="logo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <div
+                  class="d-flex flex-column flex-lg-row justify-content-between"
+                >
+                  <div class="d-inline">
+                    <h4 class="m-0 mt-2"><b>Network Engineer Intern</b></h4>
+                    <p class="text-success">PT. Lintas Data Prima</p>
+                  </div>
+                  <p class="text-secondary">Feb 2018 - May 2018</p>
+                </div>
+                <ul class="ps-3 text-secondary">
+                  <li>
+                    Configured Ubiquiti wireless antennas for network
+                    deployment.
+                  </li>
+                  <li>Assisted in new network tower installation.</li>
+                  <li>
+                    Monitored and maintained deployed network infrastructure.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          <!-- telkom -->
+          <section class="m-4 p-4 col rounded-3 shadow-sm bg-theme w-75">
+            <div class="d-flex flex-column flex-lg-row gap-3">
+              <div
+                class="d-flex flex-column align-items-center align-items-md-start"
+              >
+                <div class="d-flex flex-column align-items-center p-2">
+                  <div
+                    class="d-inline p-1 m-0 brand bg-light shadow-sm rounded"
+                  >
+                    <img
+                      src="../assets/images/logos/telkom.png"
+                      alt="BLC"
+                      class="logo"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="flex-grow-1">
+                <div
+                  class="d-flex flex-column flex-lg-row justify-content-between"
+                >
+                  <div class="d-inline">
+                    <h4 class="m-0 mt-2"><b>Network Engineer Intern</b></h4>
+                    <p class="text-success">BLC Telkom Klaten</p>
+                  </div>
+                  <p class="text-secondary">Sep 2017 - Dec 2017</p>
+                </div>
+                <ul class="ps-3 text-secondary">
+                  <li>
+                    Assisted server installation and basic server
+                    administration.
+                  </li>
+                  <li>Configured Mikrotik and Cisco network devices.</li>
+                  <li>
+                    Created blog-based technical documentation and learning
+                    notes.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </section>
+      <section id="project">
+        <!-- project section -->
+        <h2 class="pt-5 pt-md-0"><b>My Projects:</b></h2>
+        <div class="swiper swiper-project bg-swiper rounded-3">
+          <div class="swiper-wrapper p-3 p-lg-5">
+            <div class="swiper-slide">
+              <!-- profilelab -->
+              <div class="card shadow-sm bg-theme rounded-3">
+                <div
+                  class="d-flex justify-content-center bg-card rounded-top-3"
+                >
+                  <img
+                    src="../assets/images/projects/profilelab.png"
+                    alt="ProfileLab"
+                    class="object-fit-cover overflow-hidden rounded-top-3"
+                  />
+                </div>
+                <div class="card-body d-flex flex-column justify-content-end">
+                  <h5 class="card-title"><b>ProfileLab</b></h5>
+                  <p class="card-text text-secondary">
+                    A pixel-focused AI image generation platform capable of
+                    producing HD images based on user-specified prompts.
+                  </p>
+                  <div class="d-flex flex-wrap gap-3 mb-3">
+                    <small
+                      ><span class="px-2 py-1 bg-card text-secondary rounded-5"
+                        >Next.js</span
+                      ></small
+                    >
+                    <small
+                      ><span class="px-2 py-1 bg-card text-secondary rounded-5"
+                        >TypeScript</span
+                      ></small
+                    >
+                    <small
+                      ><span class="px-2 py-1 bg-card text-secondary rounded-5"
+                        >AI/ML</span
+                      ></small
+                    >
+                    <small
+                      ><span class="px-2 py-1 bg-card text-secondary rounded-5"
+                        >Tailwind</span
+                      ></small
+                    >
+                  </div>
+                  <div class="d-flex flex-column flex-md-row gap-0 gap-md-3">
+                    <small>
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-github mx-2"></i>
+                        <span class="text-decoration-none text-secondary"
+                          >Private Repository</span
+                        >
+                      </div>
+                    </small>
+                    <small>
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-box-arrow-up-right mx-2"></i>
+                        <span class="text-decoration-none text-secondary"
+                          >Demo Unavailable</span
+                        >
+                      </div>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- lockid -->
+              <div class="card shadow-sm bg-theme rounded-3">
+                <div
+                  class="d-flex justify-content-center bg-card rounded-top-3"
+                >
+                  <img
+                    src="../assets/images/projects/lockid.gif"
+                    alt="LockID"
+                    class="object-fit-cover overflow-hidden rounded-top-3"
+                  />
+                </div>
+                <div class="card-body d-flex flex-column justify-content-end">
+                  <h5 class="card-title"><b>LockID</b></h5>
+                  <p class="card-text text-secondary">
+                    A reusable user management platform featuring pre-built
+                    authentication components for login and registration.
+                  </p>
+                  <div class="d-flex flex-wrap gap-3 mb-3">
+                    <small
+                      ><span class="px-2 py-1 bg-card text-secondary rounded-5"
+                        >React</span
+                      ></small
+                    >
+                    <small
+                      ><span class="px-2 py-1 bg-card text-secondary rounded-5"
+                        >TypeScript</span
+                      ></small
+                    >
+                    <small
+                      ><span class="px-2 py-1 bg-card text-secondary rounded-5"
+                        >Node.js</span
+                      ></small
+                    >
+                    <small
+                      ><span class="px-2 py-1 bg-card text-secondary rounded-5"
+                        >Tailwind</span
+                      ></small
+                    >
+                  </div>
+                  <div class="d-flex flex-column flex-md-row gap-0 gap-md-3">
+                    <small>
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-github mx-2"></i>
+                        <span class="text-decoration-none text-secondary"
+                          >Private Repository</span
+                        >
+                      </div>
+                    </small>
+                    <small>
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-box-arrow-up-right mx-2"></i>
+                        <span class="text-decoration-none text-secondary"
+                          >Demo Unavailable</span
+                        >
+                      </div>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- personal web -->
+              <div class="card shadow-sm bg-theme rounded-3">
+                <div
+                  class="d-flex justify-content-center bg-card rounded-top-3"
+                >
+                  <img
+                    src="../assets/images/projects/crud.png"
+                    alt="CRUD"
+                    class="object-fit-cover overflow-hidden rounded-top-3"
+                  />
+                </div>
+                <div class="card-body d-flex flex-column justify-content-end">
+                  <h5 class="card-title"><b>Basic CRUD</b></h5>
+                  <p class="card-text text-secondary">
+                    A foundational content management application implementing
+                    core CRUD operations.
+                  </p>
+                  <div class="d-flex flex-wrap gap-3 mb-3">
+                    <small
+                      ><span class="px-2 py-1 bg-card text-secondary rounded-5"
+                        >JavaScript</span
+                      ></small
+                    >
+                    <small
+                      ><span class="px-2 py-1 bg-card text-secondary rounded-5"
+                        >Bootstrap</span
+                      ></small
+                    >
+                  </div>
+                  <div class="d-flex flex-column flex-md-row gap-0 gap-md-3">
+                    <small>
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-github mx-2"></i>
+                        <a
+                          href="https://github.com/tosrv/DW-stage1/tree/day6"
+                          target="_blank"
+                          class="text-decoration-none"
+                          >View on GitHub</a
+                        >
+                      </div>
+                    </small>
+                    <small>
+                      <div class="d-flex align-items-center">
+                        <i class="bi bi-box-arrow-up-right mx-2"></i>
+                        <a
+                          href="https://dw-personalwebs.netlify.app/"
+                          target="_blank"
+                          class="text-decoration-none"
+                          >Live Demo
+                        </a>
+                      </div>
+                    </small>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <!-- next project -->
+              <div
+                class="card justify-content-center gap-2 shadow-sm bg-theme rounded-3"
+              >
+                <h2 class="text-center fw-bold text-secondary">Next Project</h2>
+                <h2 class="text-center fw-bold text-secondary">Coming Soon</h2>
+                <h2 class="text-center fw-bold text-secondary">
+                  Let's build it together
+                </h2>
+              </div>
+            </div>
+            <div class="swiper-slide"></div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <!-- contact section -->
+        <div class="d-flex justify-content-center align-items-center">
+          <div class="text-center my-5 py-5">
+            <h2><b>Let's work on something meaningful</b></h2>
+            <p class="text-secondary">
+              Feel free to reach out if you're looking for a developer, have a
+              question, or just want to connect.
+            </p>
+            <div class="d-flex flex-column flex-md-row justify-content-center">
+              <!-- link -->
+              <a
+                href="mailto:rahmattomyapriliyanto@gmail.com"
+                target="_blank"
+                class="text-decoration-none text-secondary"
+                ><i class="bi bi-envelope mx-2"></i
+                ><span>rahmattomyapriliyanto@gmail.com</span></a
+              >
+              <p class="mx-3 text-secondary d-none d-md-inline">|</p>
+              <a
+                href="https:/wa.me/6281553960011"
+                target="_blank"
+                class="text-decoration-none text-secondary"
+                ><i class="bi bi-whatsapp mx-2"></i
+                ><span>+62 815-5396-0011</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <!-- footer section -->
+      <div class="border-top pt-2">
+        <div class="d-flex justify-content-around align-items-baseline">
+          <!-- copyright -->
+          <p class="text-secondary">&copy; 2025 Rahmat Tomy</p>
+
+          <div class="d-flex align-items-center">
+            <!-- link -->
+            <a
+              href="https://github.com/tosrv"
+              target="_blank"
+              class="text-decoration-none github"
+              ><i class="bi bi-github mx-2 my-0 p-0"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rahmat-tomy-apriliyanto-445a34382"
+              target="_blank"
+              class="text-decoration-none linkedin"
+              ><i class="bi bi-linkedin mx-2"></i
+            ></a>
+            <a
+              href="https://www.instagram.com/rahmat_tomy"
+              target="_blank"
+              class="text-decoration-none instagram"
+              ><i class="bi bi-instagram mx-2"></i
+            ></a>
+            <a
+              href="https://www.youtube.com/@ra-tom"
+              target="_blank"
+              class="text-decoration-none youtube"
+              ><i class="bi bi-youtube mx-2"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../assets/javascript/script.js"></script>
+  </body>
+</html>

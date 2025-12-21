@@ -1,0 +1,309 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+.navbar-brand {
+  width: 1.5rem;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.1);
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* menu button */
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+  font-size: medium;
+  padding: 5px;
+}
+
+[data-bs-theme="light"] .navbar-toggler:hover {
+  background-color: #f0f0f0;
+}
+
+[data-bs-theme="dark"] .navbar-toggler:hover {
+  background-color: rgb(43, 48, 53);
+}
+
+.offcanvas {
+  padding: 0 !important; /* prevent navbar size changes */
+}
+
+/* tech stack logo */
+.logo {
+  width: 3rem;
+  max-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.brand {
+  width: 4rem;
+  height: 4rem;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.brand:hover {
+  transform: scale(1.1);
+}
+
+/* hero display setting */
+.hero {
+  min-height: 70vh;
+}
+
+/* profile image */
+.profile {
+  height: 27rem;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* gradient for profile image */
+[data-bs-theme="light"] .gradient {
+  right: 0;
+  left: 0;
+  height: 10rem;
+  z-index: 10;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5),
+    #ffffff
+  );
+}
+
+[data-bs-theme="dark"] .gradient {
+  right: 0;
+  left: 0;
+  height: 10rem;
+  z-index: 20;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0),
+    rgba(33, 37, 41, 0.7),
+    rgba(33, 37, 41)
+  );
+}
+
+/* shape behind image */
+.shape {
+  width: 25rem;
+}
+
+/* indicates availability */
+.dot {
+  margin: 0 3px 1px;
+  width: 0.7rem;
+  height: 0.7rem;
+  background-color: lightgreen;
+}
+
+/* whatsapp button */
+.btn-success {
+  background-color: rgb(85, 212, 85);
+  border: none;
+}
+
+.btn-success:hover {
+  background-color: rgb(116, 226, 116);
+  border: none;
+}
+
+/* download button */
+.btn-reverse {
+  background-color: var(--bs-body-color);
+  color: var(--bs-body-bg);
+  border: 1px solid var(--bs-body-color);
+}
+
+/* tech stack swiper */
+.swiper-tech .swiper-wrapper {
+  height: fit-content;
+  transition-timing-function: linear !important;
+}
+
+/* tech stack item size */
+.swiper-tech .swiper-slide {
+  width: 100px;
+}
+
+/* gradient for tech stack */
+[data-bs-theme="light"] .l0 {
+  left: 0;
+  width: 7rem;
+  z-index: 10;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5),
+    #ffffff
+  );
+}
+
+[data-bs-theme="light"] .r0 {
+  right: 0;
+  width: 7rem;
+  z-index: 10;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(255, 255, 255, 0.5),
+    #ffffff
+  );
+}
+
+[data-bs-theme="dark"] .l0 {
+  left: 0;
+  width: 7rem;
+  z-index: 10;
+  background: linear-gradient(
+    to left,
+    rgba(255, 255, 255, 0),
+    rgba(33, 37, 41, 0.7),
+    rgba(33, 37, 41)
+  );
+}
+
+[data-bs-theme="dark"] .r0 {
+  right: 0;
+  width: 7rem;
+  z-index: 10;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0),
+    rgba(33, 37, 41, 0.7),
+    rgba(33, 37, 41)
+  );
+}
+
+/* project swiper */
+.swiper-project .swiper-wrapper {
+  height: fit-content;
+}
+
+[data-bs-theme="light"] .bg-swiper {
+  background-color: #f0f0f0;
+}
+
+[data-bs-theme="dark"] .bg-swiper {
+  background-color: rgb(43, 48, 53);
+}
+
+/* project card size */
+.card {
+  min-height: 33rem;
+}
+
+/* theme-match background */
+[data-bs-theme="light"] .bg-theme {
+  background-color: rgb(248, 247, 247);
+}
+
+[data-bs-theme="dark"] .bg-theme {
+  background-color: rgb(0, 0, 0);
+}
+
+/* card match theme */
+[data-bs-theme="light"] .bg-card {
+  background-color: rgb(255, 255, 255);
+}
+
+[data-bs-theme="dark"] .bg-card {
+  background-color: rgb(26, 26, 26);
+}
+
+/* social media */
+.linkedin {
+  font-size: 1.5rem;
+  color: #0a66c2;
+}
+
+.linkedin:hover {
+  color: #347ec9;
+}
+
+.github {
+  font-size: 1.5rem;
+  color: #747474;
+}
+
+.github:hover {
+  color: #a8a8a8;
+}
+
+.instagram {
+  font-size: 1.5rem;
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.youtube {
+  font-size: 1.8rem;
+  color: #ff0000;
+}
+
+.youtube:hover {
+  color: #fc3636;
+}
+
+/* custom responsive design*/
+@media (min-width: 1000px) {
+  .intro {
+    width: 20rem;
+  }
+}
+
+@media (max-width: 900px) {
+  /* ensure menubar not covered page */
+  .offcanvas {
+    width: 300px !important;
+    padding: 1rem !important;
+  }
+}
+
+@media (max-width: 500px) {
+  /* ensure menubar not covered page */
+  .offcanvas {
+    width: 200px !important;
+    padding: 0 !important;
+  }
+
+  .intro {
+    width: 20rem;
+  }
+
+  /* adjust profile image size */
+  .profile {
+    height: 23rem !important;
+  }
+
+  .shape {
+    width: 20rem;
+  }
+
+  /* experience column size */
+  .col {
+    width: 100% !important;
+  }
+}
