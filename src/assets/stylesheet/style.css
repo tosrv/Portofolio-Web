@@ -80,7 +80,7 @@ body {
 [data-bs-theme="light"] .gradient {
   right: 0;
   left: 0;
-  height: 10rem;
+  height: 8.5rem;
   z-index: 10;
   background: linear-gradient(
     to bottom,
@@ -93,7 +93,7 @@ body {
 [data-bs-theme="dark"] .gradient {
   right: 0;
   left: 0;
-  height: 10rem;
+  height: 8.5rem;
   z-index: 20;
   background: linear-gradient(
     to bottom,
