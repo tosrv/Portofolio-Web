@@ -1,5 +1,6 @@
 import express from "express";
 import hbs from "hbs";
+import { home } from "./src/controller/control.js";
 
 const app = express();
 const port = 3000;
@@ -10,9 +11,7 @@ app.use("/assets", express.static("src/assets"));
 hbs.registerPartials("src/views/sections");
 hbs.registerPartials("src/views/partials");
 
-app.get("/", (req, res) => {
-  res.render("layouts/main", { layout: false });
-});
+app.get("/", home);
 
 app.listen(port, () => {
   console.log(`Server runing on port: ${port}`);

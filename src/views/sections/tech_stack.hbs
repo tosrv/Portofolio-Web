@@ -11,181 +11,22 @@
 
   <!-- tech stack -->
   <div class="swiper-wrapper m-4">
-
-    <!-- bootstrap -->
+    <!-- items -->
+    {{#each techs}}
     <div class="swiper-slide">
       <div class="d-flex flex-column align-items-center p-2"><div
           class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
         >
           <img
-            src="/assets/images/logos/bootstrap.png"
-            alt="Bootstrap"
-            id="bootstrap"
+            src="/assets/images/logos/{{this.logo}}"
+            alt="{{this.name}}"
+            id="{{this.name}}"
             class="logo"
           />
         </div>
-        <label for="bootstrap" class="fs-6 text-secondary">Bootstrap</label>
+        <label for="{{this.name}}" class="fs-6 text-secondary">{{this.name}}</label>
       </div>
     </div>
-
-    <!-- tailwind -->
-    <div class="swiper-slide">
-      <div class="d-flex flex-column align-items-center p-2"><div
-          class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
-        >
-          <img
-            src="/assets/images/logos/tailwind.png"
-            alt="Tailwind"
-            id="tailwind"
-            class="logo"
-          />
-        </div>
-        <label for="tailwind" class="fs-6 text-secondary">Tailwind</label>
-      </div>
-    </div>
-
-    <!-- express -->
-    <div class="swiper-slide">
-      <div class="d-flex flex-column align-items-center p-2"><div
-          class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
-        >
-          <img
-            src="/assets/images/logos/express.png"
-            alt="Express.js"
-            id="expressjs"
-            class="logo"
-          />
-        </div>
-        <label for="expressjs" class="fs-6 text-secondary">Express.js</label>
-      </div>
-    </div>
-
-    <!-- nodejs -->
-    <div class="swiper-slide">
-      <div class="d-flex flex-column align-items-center p-2"><div
-          class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
-        >
-          <img
-            src="/assets/images/logos/node.png"
-            alt="Node.js"
-            id="nodejs"
-            class="logo"
-          />
-        </div>
-        <label for="nodejs" class="fs-6 text-secondary">Node.js</label>
-      </div>
-    </div>
-
-    <!-- nextjs -->
-    <div class="swiper-slide">
-      <div class="d-flex flex-column align-items-center p-2"><div
-          class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
-        >
-          <img
-            src="/assets/images/logos/nextjs.png"
-            alt="Next.js"
-            id="nextjs"
-            class="logo"
-          />
-        </div>
-        <label for="nextjs" class="fs-6 text-secondary">Next.js</label>
-      </div>
-    </div>
-
-    <!-- react -->
-    <div class="swiper-slide">
-      <div class="d-flex flex-column align-items-center p-2"><div
-          class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
-        >
-          <img
-            src="/assets/images/logos/react.png"
-            alt="React"
-            id="react"
-            class="logo"
-          />
-        </div>
-        <label for="react" class="fs-6 text-secondary">React</label>
-      </div>
-    </div>
-
-    <!-- mongodb -->
-    <div class="swiper-slide">
-      <div class="d-flex flex-column align-items-center p-2"><div
-          class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
-        >
-          <img
-            src="/assets/images/logos/mongodb.png"
-            alt="MongoDB"
-            id="mongodb"
-            class="logo"
-          />
-        </div>
-        <label for="mongodb" class="fs-6 text-secondary">MongoDB</label>
-      </div>
-    </div>
-
-    <!-- postgre -->
-    <div class="swiper-slide">
-      <div class="d-flex flex-column align-items-center p-2"><div
-          class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
-        >
-          <img
-            src="/assets/images/logos/postgre.png"
-            alt="PostgreSQL"
-            id="postgre"
-            class="logo"
-          />
-        </div>
-        <label for="postgre" class="fs-6 text-secondary">PostgreSQL</label>
-      </div>
-    </div>
-
-    <!-- javascript -->
-    <div class="swiper-slide">
-      <div class="d-flex flex-column align-items-center p-2"><div
-          class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
-        >
-          <img
-            src="/assets/images/logos/javascript.png"
-            alt="JavaScript"
-            id="javascript"
-            class="logo"
-          />
-        </div>
-        <label for="javascript" class="fs-6 text-secondary">JavaScript</label>
-      </div>
-    </div>
-
-    <!-- typescript -->
-    <div class="swiper-slide">
-      <div class="d-flex flex-column align-items-center p-2"><div
-          class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
-        >
-          <img
-            src="/assets/images/logos/typescript.png"
-            alt="TypeScript"
-            id="typescript"
-            class="logo"
-          />
-        </div>
-        <label for="typescript" class="fs-6 text-secondary">TypeScript</label>
-      </div>
-    </div>
-
-    <!-- unity -->
-    <div class="swiper-slide">
-      <div class="d-flex flex-column align-items-center p-2"><div
-          class="d-inline p-2 m-2 brand bg-theme shadow-sm rounded"
-        >
-          <img
-            src="/assets/images/logos/unity.png"
-            alt="Unity"
-            id="unity"
-            class="logo"
-          />
-        </div>
-        <label for="unity" class="fs-6 text-secondary">Unity</label>
-      </div>
-    </div>
+    {{/each}}
   </div>
 </div>
